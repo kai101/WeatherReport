@@ -65,11 +65,6 @@ public class SpeechRecognizerListener implements RecognitionListener {
             //Dangerous casting here, for 1 activity App should be fine.
             MainActivity mainActivity = (MainActivity)context;
             mainActivity.onSpeechResults(data);
-
-            //use context to perform any follow up action.
-
-            //this.context.findViewById(R.id.btn_press);
-            //mText.setText("results: "+String.valueOf(data.size()));
         }
 
     }
